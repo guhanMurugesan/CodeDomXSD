@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="world"
+    targetNamespace="http://tempuri.org/world.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/world.xsd"
+    xmlns:mstns="http://tempuri.org/world.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="Universe"/>
+  <xs:complexType name="Universe">
+    <xs:sequence>
+      <xs:element name="Earth" type="xs:string"/>
+      <xs:element name="Air" type="xs:string"/>
+      <xs:element name="Water" type="xs:string"/>
+      <xs:element name="Fire" type="xs:string"/>
+      <xs:element name="Atmosphere" type="xs:string"/>
+    </xs:sequence>
+    <xs:anyAttribute namespace="##other" processContents="lax"/>
+  </xs:complexType>
+  
+</xs:schema>
